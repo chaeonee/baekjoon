@@ -2,6 +2,7 @@
 #include <cstring>
 using namespace std;
 
+// double linked list 
 struct Node{
 	char data;
 	Node *prev, *next;
