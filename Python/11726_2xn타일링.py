@@ -2,7 +2,7 @@ if __name__ == '__main__':
 	n = int(input())
 	arr = [0] * n
 	
-  # dp 또는 재귀로 풀기 f(n) = f(n-1) + f(n-2)
+  	# dp 또는 재귀로 풀기 f(n) = f(n-1) + f(n-2)
 	arr[0] = 1
 	if n > 1:
 		arr[1] = 2
