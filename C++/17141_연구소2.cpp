@@ -98,7 +98,7 @@ int spread(int N, int M, int count, int **lab, vector<Pos> v){ // 바이러스�
 			int x = p.x + dir[d][0];
 			int y = p.y + dir[d][1];
 			if(x >= 0 && x < N && y >= 0 && y < N){
-				if(visit[x][y] == false && lab[x][y] != 1){
+				if(visit[x][y] == false && lab[x][y] != 1){ // 현재 장소에 방문한 적 없고, 벽이 아니라면
 					q.push({x,y,p.time+1});
 					visit[x][y] = true;
 					count--;
