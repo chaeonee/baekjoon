@@ -3,7 +3,7 @@ def getSum(n, cnt):
 		return cnt+1
 		
 	for i in range(1,4):
-		if n-i >= 0: n-i가 0보다 작으면 모두 더했을 때 n보다 커지기 때문에 조건 추가
+		if n-i >= 0: # n-i가 0보다 작으면 모두 더했을 때 n보다 커지기 때문에 조건 추가
 			cnt = getSum(n-i,cnt)
 			
 	return cnt
