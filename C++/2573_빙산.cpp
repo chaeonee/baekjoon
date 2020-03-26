@@ -37,7 +37,7 @@ bool isWhole(int N, int M, int **pole, queue<Pos> iceberg){ // 빙산이 한 덩
 		}
 	}
 	
-  // 만약, 한 덩어리라면 bfs 진행했을 때 모든 빙산 방문했을 것
+  	// 만약, 한 덩어리라면 bfs 진행했을 때 모든 빙산 방문했을 것
 	if(num == iceberg.size()){ // 따라서 방문한 빙산의 수와 전체 빙산의 수가 동일
 		return true;
 	}
