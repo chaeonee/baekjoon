@@ -14,7 +14,7 @@ int main() {
 		int A, B;
 		cin >> A >> B;
     
-    // index 0부터 시작하므로 1빼준 값 넣기
+    		// index 0부터 시작하므로 1빼준 값 넣기
 		v[A-1].push_back(B-1); // A뒤에 B가 서 있음을 저장
 		indegree[B-1]++; // B 전에 와야할 사람의 수 1증가
 	}
