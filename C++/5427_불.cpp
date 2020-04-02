@@ -40,7 +40,7 @@ int main() {
 		int time = 0;
 		int dir[4][2] = {{-1,0},{1,0},{0,-1},{0,1}}; // 상하좌우(북남서동)
 		while(!person.empty() && time == 0){
-    //불을 먼저 전파한 후 상근이 이동시키기(최단거리이므로 bfs 이용)
+   			//불을 먼저  후 상근이 이동시키기(최단거리이므로 bfs 이용)
 			if(!fire.empty()){
 				int f_len = fire.size(); // 현재 존재하는 불은 모두 퍼뜨려야 하므로 fire의 길이만큼씩 탐색
 				for(int i = 0; i < f_len; i++){
