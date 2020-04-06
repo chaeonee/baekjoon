@@ -39,7 +39,7 @@ vector<int> getPaper(int**paper, int N, int x, int y){ // 색종이를 1/4로 �
 	}
 	
 	int w, b; // w: 흰색 색종이의 수, b: 파란색 색종이의 수
-  // 1/4로 나눠서 색종이의 수를 재귀적으로 count
+  	// 1/4로 나눠서 색종이의 수를 재귀적으로 count
 	w = getPaper(paper,N/2,x,y)[0] + getPaper(paper,N/2,x+(N/2),y)[0] + getPaper(paper,N/2,x,y+(N/2))[0] + getPaper(paper,N/2,x+(N/2),y+(N/2))[0];
 	b = getPaper(paper,N/2,x,y)[1] + getPaper(paper,N/2,x+(N/2),y)[1] + getPaper(paper,N/2,x,y+(N/2))[1] + getPaper(paper,N/2,x+(N/2),y+(N/2))[1];
 	v[0] = w;
