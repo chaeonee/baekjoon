@@ -13,7 +13,7 @@ int main() {
 	
 	int **A = new int*[N]; // 겨울에 로봇이 추가해줄 양분
 	int **land = new int*[N]; // 땅에 남은 양분
-	deque<int> **tree = new deque<int>*[N]; 각 위치에 존재하는 나무의 나이
+	deque<int> **tree = new deque<int>*[N]; //각 위치에 존재하는 나무의 나이
 	for(int i = 0; i < N; i++){
 		A[i] = new int[N];
 		land[i] = new int[N];
@@ -110,7 +110,7 @@ int Fall(int N, int n_tree, deque<int> **tree){ // 가을
 void Winter(int N, int **land, int **A){ // 겨울
 	for(int i = 0; i < N; i++){
 		for(int j = 0; j < N; j++){
-			land[i][j] += A[i][j]; // 로봇이 땅에 정해진 양 만큼의 
+			land[i][j] += A[i][j]; // 로봇이 땅에 정해진 양 만큼의 양분 추가
 		}
 	}
 }
