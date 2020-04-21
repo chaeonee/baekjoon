@@ -72,7 +72,7 @@ if __name__ == '__main__':
 	for _ in range(12):
 		board.append(list(input()))
 	
-	puyo = [] # 뿌요가 있는 좌표 담을 
+	puyo = [] # 뿌요가 있는 좌표 담을 배열
 	for i in range(12):
 		for j in range(6):
 			if(board[i][j] != '.'):
