@@ -125,7 +125,7 @@ void moveWhite(int idx, Pos p, int x, int y, deque<Dir> **chess, Pos *pos){ // �
 		Dir dir = tmp.back();
 		tmp.pop_back();
 		chess[x][y].push_back(dir);
-		pos[dir.num] = {x,y}; // 이동된 위치값으로 
+		pos[dir.num] = {x,y}; // 이동된 위치값으로 변경
 	}
 }
 
