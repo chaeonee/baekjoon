@@ -126,7 +126,7 @@ void Neighborhood(int N, int M, deque<int> *board, int &sum, int &n_board){ // �
 					}
 					else if(board[i][j] < avg){ //평균 값보다 작다면
 						sum++;
-						board[i][j]++; // 1 
+						board[i][j]++; // 1 더해주기
 					}
 				}
 			}
