@@ -52,7 +52,7 @@ if __name__ == '__main__':
 							n_board -= 1
 							board[n[0]][n[1]] = -1
 		
-    if n_board == 0: # 원판에 숫자가 더이상 존재하지 않으면 더 진행할 필요 없음
+    		if n_board == 0: # 원판에 숫자가 더이상 존재하지 않으면 더 진행할 필요 없음
 			break
 		
 		if flag == False: # 만약 없어진 숫자가 없으면
