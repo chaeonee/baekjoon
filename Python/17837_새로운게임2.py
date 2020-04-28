@@ -60,21 +60,21 @@ if __name__ == '__main__':
 		
 		for i in range(K): # 말 순서대로 이동시키기
 			p = mal[i]
-      dx = p[0] + dir[p[2]][0]
+      			dx = p[0] + dir[p[2]][0]
 			dy = p[1] + dir[p[2]][1] # 이동해야할 말의 위치
 			if dx < 0 or dx >= N or dy < 0 or dy >= N or board[dx][dy] == 2: # 범위를 벗어났거나 파란색 체스판인 경우
 				mal[i][2] = r_dir[mal[i][2]] # 방향 바꾸고
         
-        p = mal[i]
-        dx = p[0] + dir[p[2]][0]
-        dy = p[1] + dir[p[2]][1] # 이동해야할 말의 위치 다시 설정
+        			p = mal[i]
+        			dx = p[0] + dir[p[2]][0]
+        			dy = p[1] + dir[p[2]][1] # 이동해야할 말의 위치 다시 설정
 			
 			if dx >= 0 and dx < N and dy >= 0 and dy < N: # 범위 내에 존재하고
 				if board[dx][dy] == 0: # 이동하려는 체스판이 흰색일 경우
 					mal = moveWhite(chess,mal,[p[0],p[1]],[dx,dy],i)
 				elif board[dx][dy] == 1: # 이동하려는 체스판이 빨간색일 경우
 					mal = moveRed(chess,mal,[p[0],p[1]],[dx,dy],i)
-        # 이동하려는 체스판이 파란색이거나 범위 밖일 경우에는 아무것도 수행하지 않음(만약 방향을 바꿔야하는 경우였다면 위쪽 조건문에서 이미 실행됐을 것임)
+        			# 이동하려는 체스판이 파란색이거나 범위 밖일 경우에는 아무것도 수행하지 않음(만약 방향을 바꿔야하는 경우였다면 위쪽 조건문에서 이미 실행됐을 것임)
 					
 				if len(chess[dx][dy]) >= 4: # 4개 이상의 말이 한 위치에 쌓여있다면
 					flag = True # 정상 종료
