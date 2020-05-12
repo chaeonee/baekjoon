@@ -14,7 +14,7 @@ int main() {
 	
 	int result = 0;
 	result = getSum(N,S,arr,0,0,result);
-  cout << result;
+  	cout << result;
 	
 	return 0;
 }
