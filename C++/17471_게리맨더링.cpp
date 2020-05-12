@@ -43,7 +43,7 @@ int main() {
 	deque<int> dq;
 	int s_min = 10000;
 	
-  // 1 구역 제외하고 나머지가 한 구역일 때
+  	// 1 구역 제외하고 나머지가 한 구역일 때
 	int result = isConnected(N-1,area); // 모든 구역들이 연결되어있는가?(연결되어있다면 연결된 구역의 인구수의 합, 아니면 -1)
 	if(result != -1){ // 모든 구역들이 연결되어 있을 때
 		int tmp_sub = abs(p_sum-2*result); // 인구수의 차를 구함
