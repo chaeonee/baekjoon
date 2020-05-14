@@ -19,7 +19,7 @@ int main() {
 		cin >> dice[i];
 	}
 	
-  // 윷판 만들기(linked list 이용)
+	// 윷판 만들기(linked list 이용)
 	for(int i = 0; i <= 40; i += 2){ // 먼저 2~40까지 연결(시작점의 score 값은 0으로 설정)
 		tail = addNode(i,tail); // 도착점은 아직 추가하지 않고 score가 40인 부분까지
 	}
