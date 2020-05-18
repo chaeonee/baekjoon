@@ -5,11 +5,11 @@ if __name__ == '__main__':
 	V = list(map(int,sys.stdin.readline().split()))
 	V = [0]+V # index 1부터 시작하기 위해 뒤로 밀어줌
 	
-	dp = [[False]*(M+1) for _ in range(N+1)] # 현재 단계에서 가능한 크기의 볼륨이면 true, 아니면 false
+	dp = [[False]*(M+1) for _ in range(N+1)] # 현재 곡에서 가능한 크기의 볼륨이면 true, 아니면 false
 	dp[0][S] = True # 시작 값 true로 초기화
 	for i in range(1,N+1): # 1부터 시작
 		for j in range(M+1): # 0~M
-			if dp[i-1][j]: # 이전 단계에서 가능한 볼륨 크기라면, 주어진 볼륨의 차이만큼 더하고 빼봐야 함
+			if dp[i-1][j]: # 이전 곡에서 가능한 볼륨 크기라면, 주어진 볼륨의 차이만큼 더하고 빼봐야 함
 				if j+V[i] <= M: # 더한 것이 범위 내에 존재한다면
 					dp[i][j+V[i]] = True # 더한 볼륨의 값 true로 바꿔줌
 				if j-V[i] >= 0: # 뺀 것이 범위 내에 존재한다면
