@@ -17,7 +17,7 @@ if __name__ == '__main__':
 	while q:
 		x, y, num, k = q.popleft()
 		
-		if x == H-1 and y == W-1: # 목적지 도착하였다면 num을 result에 저장 / 목적지에 도착하지 못하는 경우 result에 num을 저장하지 못하기 때문에 -1이 저장되어 있을 겄임
+		if x == H-1 and y == W-1: # 목적지 도착하였다면 num을 result에 저장 / 목적지에 도착하지 못하는 경우 result에 num을 저장하지 못하기 때문에 -1이 저장되어 있을 것임
 			result = num
 			break
 		
