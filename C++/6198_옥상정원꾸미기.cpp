@@ -18,7 +18,7 @@ int main() {
 	for(int i = N-2; i >= 0; i--){ // 맨 끝의 건물은 볼 수 있는 건물이 없으므로 N-1번째 건물부터 확인하면서 앞으로 이동
 		int cnt = 0;
 		while(!s.empty()){ // stack이 비어있지 않아야 함
-			if(height[s.top()] >= height[i]){ 현재 stack에 있는 건물들의 높이 확인 더 높은 건물이라면 볼 수 없기 때문에 break
+			if(height[s.top()] >= height[i]){ // 현재 stack에 있는 건물들의 높이 확인 더 높은 건물이라면 볼 수 없기 때문에 break
 				break;
 			}
 			cnt++; // 현재 stack 맨 위의 건물은 볼 수 있는 건물이므로 볼 수 있는 건물 개수 1 추가
