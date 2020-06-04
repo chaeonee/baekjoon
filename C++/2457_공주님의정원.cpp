@@ -62,7 +62,7 @@ int main() {
 		cout << cnt; // 선택한 꽃의 수 출력
 	}
 	else{ // 아니라면
-		cout << 0; // 0 
+		cout << 0; // 0 출력
 	}
 	
 	return 0;
