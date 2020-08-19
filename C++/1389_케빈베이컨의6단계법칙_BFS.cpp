@@ -57,7 +57,7 @@ int main() {
 		}
 	}
 	
-	cout << p_num+1; // index는 0부터 시작하므로 1증가시켜 출력
+	cout << p_num+1; // index는 0부터 시작하므로 1 증가시켜 출력
 	
 	return 0;
 }
