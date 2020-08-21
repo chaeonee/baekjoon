@@ -37,15 +37,16 @@ int main() {
 		
 		int n = 0;
 		cout << mid.size() << '\n'; // 출력할 중앙값의 개수
-        while(!mid.empty()){ // 중앙 값 출력
-            n++;
-            if(n > 10){ // 10줄씩 출력해야 하므로 10줄이 넘어갈 때마다 다음 줄로 넘어가도록 함
-                n = 1;
-                cout << '\n';
-            }
+        	while(!mid.empty()){ // 중앙 값 출력
+            		n++;
+           		if(n > 10){ // 10줄씩 출력해야 하므로 10줄이 넘어갈 때마다 다음 줄로 넘어가도록 함
+                		n = 1;
+                		cout << '\n';
+            		}
 			cout << mid.front() << " ";
 			mid.pop();
-		} cout << '\n';
+		}
+		cout << '\n';
 	}
 	
 	return 0;
