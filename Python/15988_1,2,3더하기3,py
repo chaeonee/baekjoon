@@ -1,0 +1,13 @@
+import sys
+
+dp = [0]*1000001
+for i, j in enumerate([1,2,4]):
+	dp[i+1] = j
+
+for i in range(4,1000001):
+	dp[i] = (dp[i-1] + dp[i-2] + dp[i-3]) % 1000000009
+		
+T = int(sys.stdin.readline())
+for _ in range(T):
+	n = int(sys.stdin.readline())
+	print(dp[n])
